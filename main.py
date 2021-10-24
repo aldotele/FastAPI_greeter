@@ -1,9 +1,12 @@
 from fastapi import FastAPI, Request
 from starlette.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
+from fastapi.staticfiles import StaticFiles
 
 
 app = FastAPI()
+
+app.mount("/static", StaticFiles(directory="static"), name="static")
 
 templates = Jinja2Templates(directory="templates")
 
@@ -20,6 +23,8 @@ async def root():
             <h2>a Python framework</h2>
             <h3 style="margin-top: 100px">If you want a warmer welcome, add your name to the end of the URL</h3>
             <p>(for example http://127.0.0.1:8000/John)</p>
+            
+            <img src="static/fastapi-logo.png" alt="fast api logo">
         </body>
     </html>
     """
