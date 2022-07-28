@@ -21,8 +21,8 @@ async def root():
         <body style='text-align: center'>
             <h1 style="margin-top:50px">Welcome to FastAPI</h1>
             <h2>a Python framework</h2>
-            <h3 style="margin-top: 100px">If you want a warmer welcome, add your name to the end of the URL</h3>
-            <p>(for example http://127.0.0.1:8000/John)</p>
+            <h3 style="margin-top: 100px">For a warmer welcome, add your name to the end of the URL</h3>
+            <p>(for example http://localhost:8000/John)</p>
             
             <img src="static/fastapi-logo.png" alt="fast api logo">
         </body>
