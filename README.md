@@ -10,4 +10,4 @@ With Python3 installed on your local machine, open your CLI and do the following
 - type `pip install -r requirements.txt`
 - type `uvicorn main:app`  (to launch the server)
 - navigate to [localhost:8000](http://localhost:8000) to see first endpoint
-- navigate to [localhost:8000/{your_name}](localhost:8000/JohnDoe) to see second endpoint
+- navigate to [localhost:8000/{your_name}](http://localhost:8000/John%20Doe) to see second endpoint
